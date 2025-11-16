@@ -1,0 +1,10 @@
+{
+  "name": "counter-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Build complete'",
+    "test": "echo 'No tests specified'"
+  }
+}
