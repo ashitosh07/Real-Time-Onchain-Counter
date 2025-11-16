@@ -1,10 +1,16 @@
-[workspace]
-members = ["contracts"]
-resolver = "2"
+[package]
+name = "counter"
+version = "0.1.0"
+edition = "2021"
 
-[workspace.dependencies]
-linera-sdk = "0.11.3"
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+async-trait = "0.1"
+linera-sdk = "0.15.5"
 serde = { version = "1.0", features = ["derive"] }
 thiserror = "1.0"
-async-graphql = "7.0"
-tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
+linera-sdk = { version = "0.15.5", features = ["test"] }
